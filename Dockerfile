@@ -2,7 +2,7 @@ FROM nginx:latest
 
 MAINTAINER Jam Risser <jam@codejam.ninja>
 
-COPY nginx.conf /etc/nginx/conf.d
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY entrypoint.sh /usr/sbin/entrypoint.sh
 
 RUN chmod +x /usr/sbin/entrypoint.sh
