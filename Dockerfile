@@ -1,6 +1,4 @@
-FROM nginx:latest
-
-MAINTAINER Jam Risser <jam@codejam.ninja>
+FROM openresty/openresty:latest
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY entrypoint.sh /usr/sbin/entrypoint.sh
